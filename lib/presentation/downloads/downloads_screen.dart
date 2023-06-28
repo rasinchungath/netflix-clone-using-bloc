@@ -67,7 +67,9 @@ class DownloadScreen extends StatelessWidget {
               onPressed: () {},
             ),
           ),
-          const SizedBox(height: 15,),
+          const SizedBox(
+            height: 15,
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 50, right: 50, bottom: 10),
             child: CustomButton(

@@ -10,7 +10,7 @@ class AppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-       kWidth10,
+        kWidth10,
         Text(
           title,
           style: const TextStyle(

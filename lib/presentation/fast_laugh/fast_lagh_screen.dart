@@ -14,7 +14,9 @@ class FastLaughScreen extends StatelessWidget {
           children: List.generate(
             10,
             (index) {
-              return VedioListItem(index: index,);
+              return VedioListItem(
+                index: index,
+              );
             },
           ),
         ),

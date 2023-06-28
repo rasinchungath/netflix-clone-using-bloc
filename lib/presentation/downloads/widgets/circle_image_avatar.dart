@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_bloc/presentation/downloads/widgets/tilt_image.dart';
 import '../../../core/colors/colors.dart';
+import '../../../core/constants/constants.dart';
 
 class CircleImageAvatar extends StatelessWidget {
   CircleImageAvatar({super.key});
@@ -24,11 +25,7 @@ class CircleImageAvatar extends StatelessWidget {
             radius: 145,
             backgroundColor: kGreyColor.withOpacity(.45),
           ),
-          const Text('Loading Images...', style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.bold,
-            color: kGreyColor,
-          ),),
+          loadingImages,
           Positioned(
             bottom: 52,
             child: Padding(

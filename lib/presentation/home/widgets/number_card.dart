@@ -16,7 +16,7 @@ class NumberCard extends StatelessWidget {
         Row(
           children: [
             const SizedBox(
-              width: 40,
+              width: 35,
             ),
             Stack(
               children: [
@@ -30,14 +30,7 @@ class NumberCard extends StatelessWidget {
                     borderRadius: kBorderRadius,
                   ),
                   child: const Center(
-                    child: Text(
-                      'Loading Images...',
-                      style: TextStyle(
-                        fontSize: 8,
-                        fontWeight: FontWeight.bold,
-                        color: kGreyColor,
-                      ),
-                    ),
+                    child: loadingImages,
                   ),
                 ),
                 Container(
@@ -56,13 +49,16 @@ class NumberCard extends StatelessWidget {
         ),
         Positioned(
           bottom: -29,
-          left: -3,
+          left: 5,
           child: BorderedText(
             strokeWidth: 6,
             strokeColor: kWhiteColor,
             child: Text(
-              '${index+1}',
-              style: const TextStyle(fontSize: 100, color: kBlackColor, fontWeight: FontWeight.bold),
+              '${index + 1}',
+              style: const TextStyle(
+                  fontSize: 100,
+                  color: kBlackColor,
+                  fontWeight: FontWeight.bold),
             ),
           ),
         ),

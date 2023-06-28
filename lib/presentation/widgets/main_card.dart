@@ -22,14 +22,7 @@ class MainCard extends StatelessWidget {
               borderRadius: kBorderRadius,
             ),
             child: const Center(
-              child: Text(
-                'Loading Images...',
-                style: TextStyle(
-                  fontSize: 8,
-                  fontWeight: FontWeight.bold,
-                  color: kGreyColor,
-                ),
-              ),
+              child: loadingImages,
             ),
           ),
           Container(

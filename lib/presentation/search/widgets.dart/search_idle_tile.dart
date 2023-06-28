@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_bloc/core/colors/colors.dart';
+import '../../../core/constants/constants.dart';
 
 class SearchVideoTile extends StatelessWidget {
   final String image;
@@ -14,14 +15,7 @@ class SearchVideoTile extends StatelessWidget {
           Stack(
             alignment: Alignment.center,
             children: [
-              const Text(
-                'Loading Images...',
-                style: TextStyle(
-                  fontSize: 8,
-                  fontWeight: FontWeight.bold,
-                  color: kGreyColor,
-                ),
-              ),
+              loadingImages,
               Container(
                 height: 75,
                 width: 140,

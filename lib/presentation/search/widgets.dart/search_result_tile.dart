@@ -4,8 +4,6 @@ import 'package:netflix_bloc/presentation/search/widgets.dart/title.dart';
 class SearchResultWidget extends StatelessWidget {
   const SearchResultWidget({super.key});
 
-  
-
   final String image =
       'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg';
 

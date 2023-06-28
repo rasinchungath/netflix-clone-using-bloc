@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../colors/colors.dart';
 
 const kWidth10 = SizedBox(
@@ -11,8 +10,7 @@ const kHeight10 = SizedBox(
 final BorderRadius kBorderRadius = BorderRadius.circular(10);
 
 const homeImage =
-    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg';
-
+    'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg';
 
 const loadingImages = Text(
   'Loading Images...',
@@ -21,4 +19,8 @@ const loadingImages = Text(
     fontWeight: FontWeight.bold,
     color: kGreyColor,
   ),
+);
+
+const hidingAppbarStyle = TextStyle(
+  fontWeight: FontWeight.bold,
 );
