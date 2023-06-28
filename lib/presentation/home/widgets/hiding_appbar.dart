@@ -8,7 +8,7 @@ class HidingAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 3000),
+      duration: const Duration(milliseconds: 20000),
       height: 90,
       width: double.infinity,
       color: Colors.black.withOpacity(0.5),

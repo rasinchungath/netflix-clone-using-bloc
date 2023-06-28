@@ -3,15 +3,13 @@ import 'package:flutter/rendering.dart';
 import 'package:netflix_bloc/core/constants/vertical_images.dart';
 import 'package:netflix_bloc/presentation/home/widgets/number_title_card.dart';
 import 'package:netflix_bloc/presentation/widgets/main_title_card.dart';
-import '../../core/colors/colors.dart';
-import '../../core/constants/constants.dart';
 import 'widgets/hiding_appbar.dart';
 import 'widgets/home_image_icons_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
 
-  final ValueNotifier<bool> scrollNotifier = ValueNotifier(false);
+  final ValueNotifier<bool> scrollNotifier = ValueNotifier(true);
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 scrollNotifier.value
-                    ? HidingAppbar()
+                    ? const HidingAppbar()
                     : const SizedBox(),
               ],
             ),

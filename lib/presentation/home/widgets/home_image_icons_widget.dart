@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../core/colors/colors.dart';
 import 'home_image_.dart';
-import 'icon_title_widget.dart';
+import '../../widgets/icon_title_widget.dart';
 
 class HomeImageIconsWidget extends StatelessWidget {
   const HomeImageIconsWidget({super.key});
@@ -31,9 +31,9 @@ class HomeImageIconsWidget extends StatelessWidget {
                   color: kBlackColor,
                   size: 25,
                 ),
-                label: Padding(
-                  padding: const EdgeInsets.only(right: 5),
-                  child: const Text(
+                label: const Padding(
+                  padding: EdgeInsets.only(right: 5),
+                  child: Text(
                     'Play',
                     style: TextStyle(
                       color: kBlackColor,

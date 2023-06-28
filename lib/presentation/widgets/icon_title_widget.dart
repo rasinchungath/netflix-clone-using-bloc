@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
-import '../../../core/colors/colors.dart';
+import '../../core/colors/colors.dart';
 
 class IconTitleWidget extends StatelessWidget {
   final IconData icon;
   final String title;
+  final double iconsize;
+  final double fontsize;
   const IconTitleWidget({
     super.key,
     required this.icon,
     required this.title,
+    this.iconsize=30,
+    this.fontsize=10,
   });
 
   @override
@@ -17,13 +21,13 @@ class IconTitleWidget extends StatelessWidget {
         Icon(
           icon,
           color: kWhiteColor,
-          size: 30,
+          size: iconsize,
         ),
         Text(
           title,
-          style: const TextStyle(
+          style: TextStyle(
             color: kWhiteColor,
-            fontSize: 10,
+            fontSize: fontsize,
             fontWeight: FontWeight.bold,
           ),
         ),
